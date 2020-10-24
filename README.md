@@ -34,3 +34,13 @@
  - Você deseja fornecer uma interface simples para um subsistema complexo. Os subsistemas se tornam mais complexos a medida que evoluem. A maioria dos padrões, quando aplicados, resulta em mais e menores classes. Isso torna o subsistema mais reutilizavel e mais facil de customizar, porém, também se torna mais difícil de usar para os clientes que não precisam customizá-lo. Uma fachada pode fornecer, por comportamento-padrão, uma visão simples do sistema, que é boa o suficiente para maioria dos clientes. Somente os clientes que demandarem maior customização necessitarão olhar além da fachada.
  - Existirem muitas dependencias entre clientes e classes de implementação de uma abstração. Ao introduzir uma fachada para desacoplar o subsistema dos clientes e dos outros subsistemas, estar-se-á promovendo a independência e portabilidade dos subsistemas.
 ![alt text](imagemFacade?raw=true)
+
+*Flywheight*
+
+A eficiencia do padrão Flywheight depende muito de como e onde ele é usado. Aplique o padrão Flywheight quando todas as condições a seguir forem verdadeiras:
+ - uma aplicação que utiliza um grande numero de objetos
+ - os custos de armazenamento são altos por causa da grande quantidade de objetos.
+ - a maioria dos estados de objetos pode se tornar extrínseca.
+ - muitos grupos de objetos podem ser substituidos por relativamente poucos objetos compartilhados, uma vez que seus estados extrínsecos são removidos.
+ - a aplicação não depende da identidade dos objetos. uma vez que objetos Flywheights podem ser compartilhados, testes de identidade produzirão o valor verdadeiro para objetos conceitualmente distintos.
+![alt text](imagemFW?raw=true)
