@@ -44,3 +44,14 @@ A eficiencia do padrão Flywheight depende muito de como e onde ele é usado. Ap
  - muitos grupos de objetos podem ser substituidos por relativamente poucos objetos compartilhados, uma vez que seus estados extrínsecos são removidos.
  - a aplicação não depende da identidade dos objetos. uma vez que objetos Flywheights podem ser compartilhados, testes de identidade produzirão o valor verdadeiro para objetos conceitualmente distintos.
 ![alt text](imagemFW?raw=true)
+
+*Proxy*
+
+ - Um virtual proxy cria objetos caros sob demanda.
+ - Um protection proxy controla o acesso ao objeto original. Os proxies de proteção são úteis quando os objetos devem ter diferentes direitos de acesso.
+ - Um smart reference é um substituto para um simples pointer que executa ações adicionais quando um objeto é acessado.
+ 
+ Usos típicos incluem:
+ - Contar o numero de referencias para o objeto real, de modo que o mesmo possa ser liberado automaticamente quando não houver mais referências.
+ - carregar um objeto persistente quando não houver mais referências.
+ - Verificar se o objeto real está bloqueado antes de ser acessado, para assegurar que nenhum outro objeto possa mudá-lo.
