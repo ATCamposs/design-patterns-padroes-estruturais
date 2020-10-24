@@ -6,7 +6,7 @@
  - Você quer criar uma classe reutilizável que coopere com classes não relacionadas ou não previstas, ou seja, classes que não necessariamente tenham interfaces compatíveis.
 
  - (Somente para adaptadores de objetos) Você precisa usar várias subclasses existentes, porém, é impraticável adaptar essas interfaces, criando subclasses para cada uma. Um adaptador de objetos pode adaptar a interface da sua classe-mãe.
-![alt text](imagemAdapter?raw=true)
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/adapter.png?raw=true)
 
 *Bridge*
 
@@ -14,26 +14,26 @@
  - Tanto as abstrações como as suas implementações tiverem de ser extensiveis por meio de subclasse. Neste caso, o padrão bridge permite combinar as diferentes abstrações e implementações e estendê-las independentemente.
  - (C++) você deseja ocultar completamente a implementação de uma abstração dos clientes. Em C++, a representação de uma classe é visivel na interface da classe.
  - Desejar compartilhar uma implementação entre multiplos objetos(talvez usando a contagem de referencias) e este fato deve estar oculto do cliente.
-![alt text](imagemBridge?raw=true)
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/bridge.png?raw=true)
 
  *Composite*
 
   - Quer representar hierarquias de "partes-todo" de objetos.
   - Quiser que os clientes sejam capazes de ignorar a diferença entre composições de objetos e objetos individuais. Os clientes tratarão todos os objetos na estrutura composta de maneira uniforme.
-![alt text](imagemComposite?raw=true)
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/composite.png?raw=true)
 
 *Decorator*
 
  - Para acrescentar responsabilidade a objetos individuais de forma dinâmica e transparente, ou seja sem afetar outros objetos.
  - Para responsabilidades que podem ser removidas.
  - Quando a extensão através do uso de subclasse não é prática. As vezes, um grande número de extensões independentes é possível e isso poderia produzir uma explosão de subclasses para suportar a combinação. Ou a definição de uma classe pode estar oculta ou não estar disponível para a utilização de subclasses.
-![alt text](imagemDecorator?raw=true)
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/decorator.png?raw=true)
 
 *Facade*
 
  - Você deseja fornecer uma interface simples para um subsistema complexo. Os subsistemas se tornam mais complexos a medida que evoluem. A maioria dos padrões, quando aplicados, resulta em mais e menores classes. Isso torna o subsistema mais reutilizavel e mais facil de customizar, porém, também se torna mais difícil de usar para os clientes que não precisam customizá-lo. Uma fachada pode fornecer, por comportamento-padrão, uma visão simples do sistema, que é boa o suficiente para maioria dos clientes. Somente os clientes que demandarem maior customização necessitarão olhar além da fachada.
  - Existirem muitas dependencias entre clientes e classes de implementação de uma abstração. Ao introduzir uma fachada para desacoplar o subsistema dos clientes e dos outros subsistemas, estar-se-á promovendo a independência e portabilidade dos subsistemas.
-![alt text](imagemFacade?raw=true)
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/facade.png?raw=true)
 
 *Flywheight*
 
@@ -43,7 +43,7 @@ A eficiencia do padrão Flywheight depende muito de como e onde ele é usado. Ap
  - a maioria dos estados de objetos pode se tornar extrínseca.
  - muitos grupos de objetos podem ser substituidos por relativamente poucos objetos compartilhados, uma vez que seus estados extrínsecos são removidos.
  - a aplicação não depende da identidade dos objetos. uma vez que objetos Flywheights podem ser compartilhados, testes de identidade produzirão o valor verdadeiro para objetos conceitualmente distintos.
-![alt text](imagemFW?raw=true)
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/flywheight.png?raw=true)
 
 *Proxy*
 
@@ -55,3 +55,4 @@ A eficiencia do padrão Flywheight depende muito de como e onde ele é usado. Ap
  - Contar o numero de referencias para o objeto real, de modo que o mesmo possa ser liberado automaticamente quando não houver mais referências.
  - carregar um objeto persistente quando não houver mais referências.
  - Verificar se o objeto real está bloqueado antes de ser acessado, para assegurar que nenhum outro objeto possa mudá-lo.
+![alt text](https://github.com/ATCamposs/design-patterns-padroes-estruturais/blob/main/images/proxy.png?raw=true)
