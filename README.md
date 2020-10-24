@@ -21,3 +21,10 @@
   - Quer representar hierarquias de "partes-todo" de objetos.
   - Quiser que os clientes sejam capazes de ignorar a diferença entre composições de objetos e objetos individuais. Os clientes tratarão todos os objetos na estrutura composta de maneira uniforme.
 ![alt text](imagemComposite?raw=true)
+
+*Decorator*
+
+ - Para acrescentar responsabilidade a objetos individuais de forma dinâmica e transparente, ou seja sem afetar outros objetos.
+ - Para responsabilidades que podem ser removidas.
+ - Quando a extensão através do uso de subclasse não é prática. As vezes, um grande número de extensões independentes é possível e isso poderia produzir uma explosão de subclasses para suportar a combinação. Ou a definição de uma classe pode estar oculta ou não estar disponível para a utilização de subclasses.
+![alt text](imagemDecorator?raw=true)
