@@ -14,4 +14,10 @@
  - Tanto as abstrações como as suas implementações tiverem de ser extensiveis por meio de subclasse. Neste caso, o padrão bridge permite combinar as diferentes abstrações e implementações e estendê-las independentemente.
  - (C++) você deseja ocultar completamente a implementação de uma abstração dos clientes. Em C++, a representação de uma classe é visivel na interface da classe.
  - Desejar compartilhar uma implementação entre multiplos objetos(talvez usando a contagem de referencias) e este fato deve estar oculto do cliente.
- ![alt text](imagemBridge?raw=true)
+![alt text](imagemBridge?raw=true)
+
+ *Composite*
+
+  - Quer representar hierarquias de "partes-todo" de objetos.
+  - Quiser que os clientes sejam capazes de ignorar a diferença entre composições de objetos e objetos individuais. Os clientes tratarão todos os objetos na estrutura composta de maneira uniforme.
+![alt text](imagemComposite?raw=true)
